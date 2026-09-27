@@ -11,13 +11,15 @@
 # editing samples.csv in place, so the AAFTF launcher (01_nf_aaftf.sh) keeps
 # using its own columns untouched.
 #
-# GENOME currently resolves to results/vecscreen/<sample>.vecscreen.fasta —
-# the latest AAFTF output available as of 2026-09-26. AAFTF is still running
-# (contam/FCS-GX cleanup was only just added) and the final assembly location
-# will move (likely back to results/sort/*.sorted.fasta once that stage
-# reruns with contam cleaning). Re-run this script to regenerate the sheet
-# once final assemblies land somewhere else — update GENOME_DIR/GENOME_SUFFIX
-# below, or override via env vars.
+# GENOME resolves to results/sort/<sample>.sorted.fasta.gz -- the final AAFTF
+# output (FCS-GX cleaned, rmdup'd, polished, sorted, compressed), confirmed
+# present for all 14 samples 2026-09-26 (nf_aaftf run 29116703 completed:
+# completed=86 failed=0 cached=27). Uses an ABSOLUTE path deliberately: the
+# funannotate launcher (01_nf_funannotate.sh) runs from its own isolated
+# .nf_launch/annotate/ launchDir, so a relative GENOME path here would
+# resolve against THAT directory, not this project root. nf_funannotate1
+# reads .gz genome FASTAs directly (see assets/schema_input.json), no need
+# to decompress first.
 #
 # Usage:  pipeline/annotation/00_make_samples_funannotate.sh [samples.csv] [samples_funannotate.csv]
 set -euo pipefail
@@ -26,8 +28,8 @@ PROJECT="${PROJECT:-$PWD}"
 IN="${1:-$PROJECT/samples.csv}"
 OUT="${2:-$PROJECT/samples_funannotate.csv}"
 
-GENOME_DIR="${GENOME_DIR:-$PROJECT/results/vecscreen}"
-GENOME_SUFFIX="${GENOME_SUFFIX:-.vecscreen.fasta}"
+GENOME_DIR="${GENOME_DIR:-$PROJECT/results/sort}"
+GENOME_SUFFIX="${GENOME_SUFFIX:-.sorted.fasta.gz}"
 
 awk -F, -v OFS=, -v genome_dir="$GENOME_DIR" -v genome_suffix="$GENOME_SUFFIX" '
 NR==1 {
