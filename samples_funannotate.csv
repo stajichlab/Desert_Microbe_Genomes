@@ -1,0 +1,15 @@
+SPECIES,STRAIN,ASMID,LOCUSTAG,BUSCO_LINEAGE,TRANSL_TABLE,NCBI_TAXONID,GENOME
+Aureobasidium melanogenum,UCR_M40,M40,FUCRM40,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/M40.vecscreen.fasta
+Aureobasidium pullulans,UCR_M45,M45,FUCRM45,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/M45.vecscreen.fasta
+Dimorphoma saxea,UCR_M48,M48,FUCRM48,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/M48.vecscreen.fasta
+Ascomycete sp.,UCR_V103,V103,FUCRV103,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V103.vecscreen.fasta
+Ascomycete sp.,UCR_V109,V109,FUCRV109,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V109.vecscreen.fasta
+Ascomycete sp.,UCR_V111,V111,FUCRV111,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V111.vecscreen.fasta
+Neocelosporium aereum,UCR_V117,V117,FUCRV117,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V117.vecscreen.fasta
+Pezizomycotina sp.,UCR_V119,V119,FUCRV119,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V119.vecscreen.fasta
+Basidiomycete sp.,UCR_V11,V11,FUCRV11,basidiomycota_odb10,1,5204,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V11.vecscreen.fasta
+Ascomycete sp.,UCR_V138,V138,FUCRV138,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V138.vecscreen.fasta
+Lichenostigmatales sp.,UCR_V20,V20,FUCRV20,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V20.vecscreen.fasta
+Buckleyzyma phyllomatis,UCR_V22,V22,FUCRV22,basidiomycota_odb10,1,5204,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V22.vecscreen.fasta
+Dothideomycetes sp.,UCR_V37,V37,FUCRV37,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V37.vecscreen.fasta
+Dothideomycetes sp.,UCR_V51,V51,FUCRV51,ascomycota_odb10,1,4890,/bigdata/stajichlab/shared/projects/Desert_microbes/Culture_genomes/results/vecscreen/V51.vecscreen.fasta
